@@ -25,10 +25,10 @@ function waterBehave() {
     if (temperature >= 100) {
         output.innerHTML = log('Water is steam in this temperature') + output.innerHTML;
     }
-    if (temperature < 100 && temperature >= 0) {
+    else if (temperature < 100 && temperature >= 0) {
         output.innerHTML = log('Water is liquid in this temperature') + output.innerHTML;
     }
-    if (temperature < 0) {
+    else if (temperature < 0) {
         output.innerHTML = log('Water is frozen in this temperature') + output.innerHTML;
     }
     else {
