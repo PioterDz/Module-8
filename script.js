@@ -16,6 +16,8 @@ var log = function(text){
     document.write(text + '<br>');
 }
 
+var fahrenheit;
+
 function fahr() {
     fahrenheit = (temperature * 1.8) + 32;
     output.innerHTML = log('Temperature is ' + fahrenheit + 'Fahrenheits') + output.innerHTML;
@@ -25,7 +27,7 @@ function waterBehave() {
     if (temperature >= 100) {
         output.innerHTML = log('Water is steam in this temperature') + output.innerHTML;
     }
-    else if (temperature < 100 && temperature >= 0) {
+    else  if (temperature < 100 && temperature >= 0) {
         output.innerHTML = log('Water is liquid in this temperature') + output.innerHTML;
     }
     else if (temperature < 0) {
