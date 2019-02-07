@@ -5,6 +5,7 @@
 var output = document.getElementById('temp-output');
 var tempButton = document.getElementById('temp-button');
 var temperature;
+var fahrenheit;
 
 tempButton.addEventListener('click', function(){
     temperature = window.prompt('What is the temperature in Celsius?');
@@ -15,8 +16,6 @@ tempButton.addEventListener('click', function(){
 var log = function(text){
     document.write(text + '<br>');
 }
-
-var fahrenheit;
 
 function fahr() {
     fahrenheit = (temperature * 1.8) + 32;
